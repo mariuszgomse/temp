@@ -1,0 +1,8 @@
+DEFAULT_BRANCH='master'
+currentBranch=`git rev-parse --abbrev-ref HEAD`
+if [ $currentBranch = $DEFAULT_BRANCH ]
+then
+echo 'ok'
+else
+echo 'nie fajnie'
+fi
